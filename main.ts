@@ -6,7 +6,7 @@ input.onButtonPressed(Button.A, function () {
     }
 })
 input.onButtonPressed(Button.AB, function () {
-    debug = 10
+    debug = 1
     debugtime = 200
 })
 input.onButtonPressed(Button.B, function () {
@@ -17,8 +17,10 @@ let sprite: game.LedSprite = null
 let debug = 0
 let debugtime = 0
 debugtime = 200
-debug = 10
+debug = 1
 sprite = game.createSprite(0, 2)
+let ajuda = game.createSprite(2, 3)
+let ajuda2 = game.createSprite(2, 1)
 basic.forever(function () {
     pins.analogWritePin(AnalogPin.P0, Math.abs(game.score()))
 })
