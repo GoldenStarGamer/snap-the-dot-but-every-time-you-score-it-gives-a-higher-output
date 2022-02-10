@@ -21,6 +21,8 @@ debug = 1
 sprite = game.createSprite(0, 2)
 let ajuda = game.createSprite(2, 3)
 let ajuda2 = game.createSprite(2, 1)
+let ajuda3 = game.createSprite(2, 4)
+let ajuda4 = game.createSprite(2, 0)
 basic.forever(function () {
     pins.analogWritePin(AnalogPin.P0, Math.abs(game.score()))
 })
