@@ -7,12 +7,16 @@ input.onButtonPressed(Button.A, function () {
 })
 input.onButtonPressed(Button.AB, function () {
     debug = 10
+    debugtime = 200
 })
 input.onButtonPressed(Button.B, function () {
     debug = 1000
+    debugtime = 1000
 })
 let sprite: game.LedSprite = null
 let debug = 0
+let debugtime = 0
+debugtime = 200
 debug = 10
 sprite = game.createSprite(1, 2)
 basic.forever(function () {
@@ -20,6 +24,6 @@ basic.forever(function () {
 })
 basic.forever(function () {
     sprite.move(1)
-    basic.pause(200)
+    basic.pause(debugtime)
     sprite.ifOnEdgeBounce()
 })
