@@ -18,7 +18,7 @@ let debug = 0
 let debugtime = 0
 debugtime = 200
 debug = 10
-sprite = game.createSprite(1, 2)
+sprite = game.createSprite(0, 2)
 basic.forever(function () {
     pins.analogWritePin(AnalogPin.P0, Math.abs(game.score()))
 })
